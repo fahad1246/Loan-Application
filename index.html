@@ -1,0 +1,61 @@
+<!--Fahad Mohammed
+03/04/21
+Project 5
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="proj5.css"> <!--This is connecting the CSS file to the main-->
+        <script src="proj5.js"></script><!-- connects the js to html-->
+       
+    </head>
+    <body> 
+        <h1>Loan Application</h1>
+        <div> 
+        
+            <p>* means required field</p>
+            <!--This is part includes the form and all the information which will be posted on the form-->
+            <form name="form1" 
+              action="http://ectweb.cs.depaul.edu/sjost/receipt.php"
+              method="POST">
+                <!--this part includes all the input fields for person 1 with button to submit application-->
+                <label for="Fullname">*Full Name:</label><br>
+                <input type="text" id="Fullname" name="Fullname" placeholder="Name Required"><br><br>
+
+                <label for="address">Address:</label><br>
+                <input type="text" id="Address" name="Address" placeholder="1234 Depaul St"><br><br>
+
+                <label for="Age">Date of Birth:</label><br>
+                <input type="number" id="name" name="Age" placeholder="MM/DD/YYYY"><br><br>
+
+                <label for="SSN">Social Security: </label><br>
+                <input type="number" id="SSN" name="SSN" placeholder="123-56-7890"><br><br>
+
+                <label for="Loan">Loan Amount:</label><br>
+                <input type="number" id="Loan" name="Loan" placeholder="$10,000"><br><br>
+
+               
+
+                <!--This is for co-applicant has all the input fields and had a button which adds a co-applicant-->
+                <label for="co-applicant">Click yes for Co-Applicant:</label><br>
+                <input type="radio" onclick="myFunction()">Yes
+                <input type="radio" onclick="myFunction()">No<br><br>
+                    <div id="myDIV" style= "display:none">
+                        <label for="Fullname2">*Full Name Co-Applicant:</label><br>
+                        <input type="text" id="Fullname2" name="Fullname2" placeholder="Name Required"><br><br>
+
+                        <label for="address2">Address:</label><br>
+                        <input type="text" id="Address2" name="Address2" placeholder="1234 Depaul St"><br><br>
+
+                        <label for="Age2">Date of Birth:</label><br>
+                        <input type="number" id="Age2" name="Age2" placeholder="MM/DD/YYYY"><br><br>
+
+                        <label for="SSN2">Social Security: </label><br>
+                        <input type="number" id="SSN2" name="SSN2" placeholder="123-56-7890"><br><br> 
+                    </div>
+                 <input type="submit" value="Submit Application" Id="btn">
+            </form>
+        </div>
+    </body> 
+</html>
